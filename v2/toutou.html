@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Toutou 3.0 - Projet ELIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Toutou 3.0 - Projet ELIS</h1>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="mission.html">Notre mission</a></li>
+                <li><a href="equipe.html">Notre équipe</a></li>
+                <li class="has-submenu">
+                    <a href="toutou.html" class="active">Le Toutou 3.0</a>
+                    <ul class="submenu">
+                        <li><a href="#fonctionnement">Fonctionnement technique</a></li>
+                        <li><a href="#code-source">Code source</a></li>
+                        <li><a href="#defis">Défis et solutions</a></li>
+                        <li><a href="#evolution">Évolution du projet</a></li>
+                    </ul>
+                </li>
+                <li><a href="parcours.html">Notre parcours</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentation">
+            <h2>Présentation du Toutou 3.0</h2>
+            <p>Le Toutou 3.0 est un ourson en peluche innovant, capable d'interagir avec les enfants de manière naturelle et adaptée grâce à une combinaison de technologies de pointe :</p>
+            <ul>
+                <li>Un Raspberry Pi 4 pour la puissance de calcul</li>
+                <li>Un microphone et un haut-parleur pour la communication audio</li>
+                <li>Une intelligence artificielle basée sur ChatGPT pour le traitement du langage naturel</li>
+            </ul>
+            <img src="toutou-3-0.jpg" alt="Le Toutou 3.0">
+        </section>
+
+        <section id="fonctionnement">
+            <h2>Fonctionnement technique</h2>
+            <p>Le Toutou 3.0 utilise un Raspberry Pi 4 comme unité centrale, sur lequel est installé un script Python qui gère l'interaction avec l'enfant. Voici les principales étapes du processus :</p>
+            <ol>
+                <li>Le microphone capte les paroles de l'enfant</li>
+                <li>Le script Python convertit l'audio en texte grâce à une API de reconnaissance vocale</li>
+                <li>Le texte est envoyé à l'API de ChatGPT pour interprétation et génération d'une réponse appropriée</li>
+                <li>La réponse de ChatGPT est convertie en audio grâce à une API de synthèse vocale</li>
+                <li>L'audio est joué via le haut-parleur du Toutou 3.0</li>
+            </ol>
+        </section>
+
+        <section id="code-source">
+            <h2>Code source</h2>
+            <p>Le code source du Toutou 3.0 est disponible sur GitHub à l'adresse suivante : <a href="https://github.com/PatBQc/ProjetElis" target="_blank">https://github.com/PatBQc/ProjetElis</a></p>
+            <p>Il est écrit en Python et utilise plusieurs bibliothèques externes pour la reconnaissance vocale, la synthèse vocale et l'interaction avec l'API de ChatGPT.</p>
+            <p>Voici un aperçu simplifié de l'algorithme principal :</p>
+            <pre>
+            Tant que l'enfant veut parler :
+                Écouter les paroles de l'enfant via le microphone
+                Convertir l'audio en texte
+                Envoyer le texte à ChatGPT
+                Recevoir la réponse de ChatGPT
+                Convertir la réponse en audio
+                Jouer l'audio via le haut-parleur
+            </pre>
+        </section>
+
+        <section id="defis">
+            <h2>Défis et solutions</h2>
+            <p>Lors du développement du Toutou 3.0, nous avons dû faire face à plusieurs défis, notamment :</p>
+            <ul>
+                <li>La reconnaissance de la parole des enfants, parfois imprécise ou hésitante</li>
+                <li>La génération de réponses adaptées au niveau de langage et de compréhension des enfants</li>
+                <li>L'intégration de tous les composants dans un format de peluche agréable et sécurisé</li>
+            </ul>
+            <p>Nous avons résolu ces défis en travaillant étroitement avec des experts en traitement du langage naturel, en psychologie de l'enfant et en design de produits. Nous avons également réalisé de nombreux tests utilisateurs pour affiner les réglages de notre système.</p>
+        </section>
+
+        <section id="evolution">
+            <h2>Évolution du projet</h2>
+            <p>Le Toutou 3.0 est en constante évolution pour s'adapter aux besoins et aux retours des utilisateurs. Parmi les pistes d'amélioration envisagées, on peut citer :</p>
+            <ul>
+                <li>L'ajout d'une caméra pour permettre une interaction visuelle et la reconnaissance des émotions</li>
+                <li>Le développement d'une application mobile compagnon pour suivre les progrès de l'enfant</li>
+                <li>L'intégration de nouveaux scénarios d'interaction (jeux éducatifs, histoires interactives, etc.)</li>
+            </ul>
+            <p>Nous sommes ouverts à toutes les suggestions et idées pour faire du Toutou 3.0 un compagnon toujours plus enrichissant et stimulant pour les enfants.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Projet ELIS - Tous droits réservés</p>
+        <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
