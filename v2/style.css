@@ -199,6 +199,64 @@ h3 {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Styles pour la page "Notre parcours" */
+
+.timeline-item {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item blockquote {
+    font-style: italic;
+    color: #777;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.lessons-learned {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #e9f7ef;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lessons-learned ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lessons-learned li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.lessons-learned li:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
 /* Styles pour les appareils mobiles */
 @media screen and (max-width: 768px) {
     .header-top {
