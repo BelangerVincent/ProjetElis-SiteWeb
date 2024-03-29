@@ -257,6 +257,38 @@ h3 {
     top: 2px;
 }
 
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th,
+.product-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-table td img {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.product-table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.product-table td a:hover {
+    text-decoration: underline;
+}
+
 /* Styles pour les appareils mobiles */
 @media screen and (max-width: 768px) {
     .header-top {
@@ -322,6 +354,20 @@ h3 {
     .code-example {
         font-size: 14px;
         padding: 10px;
+    }
+
+    .product-table {
+        font-size: 14px;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 8px;
+    }
+
+    .product-table td img {
+        max-width: 48px;
+        max-height: 48px;
     }
 
     main {
