@@ -197,34 +197,36 @@
             <h3>Gestion des erreurs et optimisations</h3>
             <p>Une attention particulière a été portée à la gestion des erreurs et des exceptions, afin de garantir un fonctionnement robuste et une expérience utilisateur optimale. Par exemple, le code vérifie systématiquement la validité des réponses reçues des API externes et fournit des messages d'erreur clairs en cas de problème :</p>
         
-            <pre><code>try:
-            text = text + " " + recognizer.recognize_google(audio, language="fr-FR")
-            print(bcolors.SYSTEM +  f"  Sys: Texte reconnu: {text}" + bcolors.ENDC)
-        except sr.UnknownValueError:
-            print(bcolors.SYSTEM + "  Sys: Exception: Could not understand audio" + bcolors.ENDC)
-        except sr.RequestError as e:
-            print(bcolors.SYSTEM + f"  Sys: Exception: Could not request results; {e}" + bcolors.ENDC)</code></pre>
+            <pre class="code-example"><code>
+try:
+    text = text + " " + recognizer.recognize_google(audio, language="fr-FR")
+    print(bcolors.SYSTEM +  f"  Sys: Texte reconnu: {text}" + bcolors.ENDC)
+except sr.UnknownValueError:
+    print(bcolors.SYSTEM + "  Sys: Exception: Could not understand audio" + bcolors.ENDC)
+except sr.RequestError as e:
+    print(bcolors.SYSTEM + f"  Sys: Exception: Could not request results; {e}" + bcolors.ENDC)</code></pre>
         
             <p>Plusieurs optimisations ont été implémentées pour réduire la latence et améliorer la fluidité des interactions, comme le traitement parallèle des réponses de GPT-4 :</p>
         
-            <pre><code># Séparation des phrases de la réponse
-        split_answers = re.findall(r'[^.!?]*[.!?]', answer)
-        
-        # Traitement parallèle des phrases
-        for answer_part in split_answers:
-            response = client.audio.speech.create(
-                model="tts-1",
-                voice="echo", 
-                response_format="mp3",
-                input=answer_part
-            )
-            filename = os.path.join(experiment_folder, str(len(prompts)).zfill(4) + "-Elis (" + str(answer_part_index).zfill(2) + ").mp3")
-            response.stream_to_file(filename)
-            
-            # Attente de la fin de la lecture de la phrase précédente
-            await task_player
-            # Lecture de la nouvelle phrase
-            task_player = asyncio.create_task(asyncio.to_thread(playsound, filename))</code></pre>
+            <pre class="code-example"><code>
+# Séparation des phrases de la réponse
+split_answers = re.findall(r'[^.!?]*[.!?]', answer)
+
+# Traitement parallèle des phrases
+for answer_part in split_answers:
+    response = client.audio.speech.create(
+        model="tts-1",
+        voice="echo", 
+        response_format="mp3",
+        input=answer_part
+    )
+    filename = os.path.join(experiment_folder, str(len(prompts)).zfill(4) + "-Elis (" + str(answer_part_index).zfill(2) + ").mp3")
+    response.stream_to_file(filename)
+    
+    # Attente de la fin de la lecture de la phrase précédente
+    await task_player
+    # Lecture de la nouvelle phrase
+    task_player = asyncio.create_task(asyncio.to_thread(playsound, filename))</code></pre>
         
             <h3>Un projet open-source</h3>
             <p>Le code source complet du Toutou 3.0 est disponible sur GitHub, reflétant notre volonté de transparence et de collaboration :</p>
