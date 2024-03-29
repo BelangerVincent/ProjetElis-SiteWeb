@@ -38,65 +38,269 @@
     </header>
 
     <main>
+        <section id="table-des-matieres">
+            <h2>Table des matières</h2>
+            <ul>
+                <li><a href="#presentation">Présentation du Toutou 3.0</a></li>
+                <li><a href="#fonctionnement">Fonctionnement technique</a></li>
+                <li><a href="#code-source">Code source</a></li>
+                <li><a href="#defis">Défis et solutions</a></li>
+                <li><a href="#evolution">Évolution du projet</a></li>
+            </ul>
+        </section>
+
         <section id="presentation">
             <h2>Présentation du Toutou 3.0</h2>
-            <p>Le Toutou 3.0 est un ourson en peluche innovant, capable d'interagir avec les enfants de manière naturelle et adaptée grâce à une combinaison de technologies de pointe :</p>
+            <p>Le Toutou 3.0, développé dans le cadre du projet ELIS, est un ourson en peluche innovant, conçu pour accompagner les enfants de 3 à 8 ans dans leur développement langagier et social. Grâce à une combinaison unique de technologies de pointe (intelligence artificielle, reconnaissance et synthèse vocale), il offre une expérience d'interaction naturelle et adaptée aux besoins de chaque enfant.</p>
+        
+            <div class="image-container">
+                <img src="images/toutou-3-0.jpg" alt="Le Toutou 3.0" width="300" height="200">
+            </div>
+        
+            <h3>Un compagnon bienveillant et stimulant</h3>
+            <p>Plus qu'une simple peluche interactive, le Toutou 3.0 est un véritable compagnon pour l'enfant. Son apparence attachante et sa personnalité bienveillante, basée sur le modèle de conversation GPT-4, encouragent l'enfant à interagir spontanément avec lui. Que ce soit pour raconter des histoires, jouer à des jeux éducatifs ou simplement discuter, le Toutou 3.0 s'adapte au rythme et aux intérêts de l'enfant, tout en veillant à maintenir une conversation constructive et enrichissante.</p>
+        
+            <h3>Une aide précieuse pour les enfants en difficulté</h3>
+            <p>Le Toutou 3.0 est particulièrement bénéfique pour les enfants rencontrant des difficultés langagières, comme les troubles de l'articulation (dyslalie) ou les retards de langage. Grâce à des exercices ciblés et à une exposition régulière à un langage adapté, il aide l'enfant à progresser dans sa prononciation et à enrichir son vocabulaire. Il peut également servir de support réconfortant pour les enfants victimes de traumatismes, en leur offrant une présence rassurante et à l'écoute.</p>
+        
+            <h3>Favoriser le développement global de l'enfant</h3>
+            <p>Au-delà des compétences langagières, le Toutou 3.0 contribue au développement global de l'enfant. Les interactions qu'il propose favorisent :</p>
             <ul>
-                <li>Un Raspberry Pi 4 pour la puissance de calcul</li>
-                <li>Un microphone et un haut-parleur pour la communication audio</li>
-                <li>Une intelligence artificielle basée sur ChatGPT pour le traitement du langage naturel</li>
+                <li>🗣️ Les compétences sociales, à travers des jeux de rôle et des mises en situation</li>
+                <li>🎨 La créativité, en encourageant l'enfant à inventer des histoires et à exprimer ses idées</li>
+                <li>🧠 Les capacités cognitives, avec des devinettes, des énigmes et des jeux de logique adaptés à son âge</li>
+                <li>🌈 L'intelligence émotionnelle, en aidant l'enfant à identifier et à exprimer ses émotions</li>
             </ul>
-            <img src="toutou-3-0.jpg" alt="Le Toutou 3.0">
+        
+            <div class="image-container">
+                <img src="images/enfant-toutou.jpg" alt="Un enfant jouant avec le Toutou 3.0" width="300" height="200">
+            </div>
+        
+            <h3>Une technologie de pointe au service de l'enfant</h3>
+            <p>Le Toutou 3.0 intègre les dernières avancées en matière d'intelligence artificielle et de traitement du langage naturel, tout en restant simple et intuitif d'utilisation. Son fonctionnement repose sur :</p>
+            <ul>
+                <li>🎙️ Un microphone pour capter la voix de l'enfant</li>
+                <li>🖥️ Un Raspberry Pi pour le traitement des données</li>
+                <li>🧠 Le modèle de langage GPT-4 pour analyser les demandes de l'enfant et générer des réponses adaptées</li>
+                <li>🔊 Un haut-parleur pour restituer les réponses du Toutou 3.0</li>
+            </ul>
+            <p>Toutes ces technologies sont intégrées de manière transparente dans la peluche, offrant à l'enfant une expérience d'interaction fluide et naturelle.</p>
+        
+            <div class="image-container">
+                <img src="images/composants-toutou.jpg" alt="Les composants technologiques du Toutou 3.0" width="300" height="200">
+            </div>
+        
+            <p>Avec le Toutou 3.0, Attis et Vincent, les deux étudiants de secondaire 2 à l'origine du projet ELIS, souhaitent mettre la technologie au service du bien-être et de l'épanouissement des enfants. Une ambition à la fois simple et révolutionnaire, qui témoigne de leur engagement à rendre le monde meilleur, un enfant à la fois.</p>
         </section>
 
         <section id="fonctionnement">
             <h2>Fonctionnement technique</h2>
-            <p>Le Toutou 3.0 utilise un Raspberry Pi 4 comme unité centrale, sur lequel est installé un script Python qui gère l'interaction avec l'enfant. Voici les principales étapes du processus :</p>
-            <ol>
-                <li>Le microphone capte les paroles de l'enfant</li>
-                <li>Le script Python convertit l'audio en texte grâce à une API de reconnaissance vocale</li>
-                <li>Le texte est envoyé à l'API de ChatGPT pour interprétation et génération d'une réponse appropriée</li>
-                <li>La réponse de ChatGPT est convertie en audio grâce à une API de synthèse vocale</li>
-                <li>L'audio est joué via le haut-parleur du Toutou 3.0</li>
-            </ol>
+            <p>Le Toutou 3.0 est un concentré de technologies innovantes, intégrées de manière transparente pour offrir une expérience d'interaction fluide et naturelle. Son fonctionnement repose sur une boucle d'interaction continue entre l'enfant et le Toutou, rendue possible par plusieurs composants clés :</p>
+        
+            <div class="mermaid">
+                graph TD
+                A[Microphone] --> B(Reconnaissance vocale)
+                B --> C{Traitement par l'IA}
+                C --> D(Synthèse vocale)
+                D --> E[Haut-parleur]
+                E --> A
+            </div>
+        
+            <h3>Matériel</h3>
+            <p>Le cœur du Toutou 3.0 est un Raspberry Pi, un micro-ordinateur abordable et polyvalent, parfaitement adapté aux projets éducatifs et créatifs. Nous avons choisi le modèle 4A pour sa puissance de calcul et sa compatibilité avec de nombreux périphériques, tout en gardant un form factor compact (de la taille d'une carte de crédit).</p>
+            <p>Les composants suivants sont connectés au Raspberry Pi via USB :</p>
+            <ul>
+                <li>🎙️ Un microphone pour capter la voix de l'enfant</li>
+                <li>🔊 Un haut-parleur pour restituer les réponses du Toutou 3.0</li>
+            </ul>
+            <p>Nous avons sélectionné ces composants pour leur compatibilité avec le Raspberry Pi et leur facilité d'intégration. Voici un tableau récapitulatif des éléments utilisés :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Composant</th>
+                        <th>Référence</th>
+                        <th>Lien</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raspberry Pi 4A</td>
+                        <td>RPI4A-2GB</td>
+                        <td><a href="https://www.digikey.com/products/en?keywords=RPI4A-2GB" target="_blank">Digikey</a></td>
+                        <td>59,95 $</td>
+                    </tr>
+                    <tr>
+                        <td>Microphone USB</td>
+                        <td>AOM-5024L-HD-R</td>
+                        <td><a href="https://www.digikey.com/products/en?keywords=AOM-5024L-HD-R" target="_blank">Digikey</a></td>
+                        <td>6,95 $</td>
+                    </tr>
+                    <tr>
+                        <td>Haut-parleur USB</td>
+                        <td>668-1391-ND</td>
+                        <td><a href="https://www.digikey.com/products/en?keywords=668-1391-ND" target="_blank">Digikey</a></td>
+                        <td>12,50 $</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h3>Gestion thermique</h3>
+            <p>Pour éviter toute surchauffe du Toutou 3.0, nous avons mis en place un système de dissipation thermique efficace :</p>
+            <ul>
+                <li>🌡️ Des dissipateurs thermiques pour répartir la chaleur générée par le Raspberry Pi</li>
+                <li>💨 Un ventilateur pour évacuer l'air chaud à travers la peluche de manière homogène</li>
+            </ul>
+            <p>Grâce à ces optimisations, le Toutou 3.0 peut fonctionner de manière continue sans risque de surchauffe, offrant ainsi une expérience sûre et agréable pour l'enfant.</p>
+        
+            <div class="image-container">
+                <img src="images/composants-toutou.jpg" alt="Les composants internes du Toutou 3.0" width="300" height="200">
+            </div>
+        
+            <h3>Connectivité</h3>
+            <p>Pour communiquer avec les services d'intelligence artificielle en ligne (reconnaissance vocale, traitement du langage, synthèse vocale), le Toutou 3.0 utilise une connexion Wi-Fi intégrée au Raspberry Pi. À terme, nous envisageons d'ajouter une connectivité cellulaire (via une carte SIM) pour rendre le Toutou 3.0 encore plus autonome et nomade.</p>
+        
+            <div class="mermaid">
+                graph LR
+                A[Toutou 3.0] --> B(Wi-Fi)
+                B --> C{Internet}
+                C --> D[Services IA]
+                D --> B
+            </div>
+        
+            <p>L'ensemble de ces choix techniques, mûrement réfléchis, permettent au Toutou 3.0 d'offrir une expérience d'interaction riche et fluide, tout en restant abordable et facile à prendre en main. Un concentré d'innovation au service du développement et de l'épanouissement des enfants !</p>
         </section>
 
         <section id="code-source">
             <h2>Code source</h2>
-            <p>Le code source du Toutou 3.0 est disponible sur GitHub à l'adresse suivante : <a href="https://github.com/PatBQc/ProjetElis" target="_blank">https://github.com/PatBQc/ProjetElis</a></p>
-            <p>Il est écrit en Python et utilise plusieurs bibliothèques externes pour la reconnaissance vocale, la synthèse vocale et l'interaction avec l'API de ChatGPT.</p>
-            <p>Voici un aperçu simplifié de l'algorithme principal :</p>
-            <pre>
-            Tant que l'enfant veut parler :
-                Écouter les paroles de l'enfant via le microphone
-                Convertir l'audio en texte
-                Envoyer le texte à ChatGPT
-                Recevoir la réponse de ChatGPT
-                Convertir la réponse en audio
-                Jouer l'audio via le haut-parleur
-            </pre>
+            <p>Le code source du Toutou 3.0, développé en Python, est le fruit d'un travail minutieux visant à offrir une expérience d'interaction fluide et engageante pour les enfants. Il s'appuie sur plusieurs bibliothèques et services externes pour la reconnaissance vocale, le traitement du langage naturel et la synthèse vocale.</p>
+        
+            <h3>Architecture globale</h3>
+            <p>Le programme principal, structuré autour d'une boucle d'interaction continue, suit les étapes suivantes :</p>
+            <ol>
+                <li>Écoute de la voix de l'enfant via le microphone</li>
+                <li>Conversion de la voix en texte grâce à l'API Google Speech-to-Text (STT)</li>
+                <li>Envoi du texte à GPT-4, un modèle de langage développé par OpenAI, pour interprétation et génération d'une réponse appropriée</li>
+                <li>Conversion de la réponse textuelle en voix grâce à la bibliothèque Whisper d'OpenAI (Text-to-Speech, TTS)</li>
+                <li>Lecture de la réponse vocale via le haut-parleur du Toutou 3.0</li>
+            </ol>
+        
+            <div class="mermaid">
+                graph TD
+                A[Microphone] --> B(Google STT)
+                B --> C{GPT-4}
+                C --> D(Whisper TTS)
+                D --> E[Haut-parleur]
+                E --> A
+            </div>
+        
+            <h3>Gestion des erreurs et optimisations</h3>
+            <p>Une attention particulière a été portée à la gestion des erreurs et des exceptions, afin de garantir un fonctionnement robuste et une expérience utilisateur optimale. Par exemple, le code vérifie systématiquement la validité des réponses reçues des API externes et fournit des messages d'erreur clairs en cas de problème :</p>
+        
+            <pre><code>try:
+            text = text + " " + recognizer.recognize_google(audio, language="fr-FR")
+            print(bcolors.SYSTEM +  f"  Sys: Texte reconnu: {text}" + bcolors.ENDC)
+        except sr.UnknownValueError:
+            print(bcolors.SYSTEM + "  Sys: Exception: Could not understand audio" + bcolors.ENDC)
+        except sr.RequestError as e:
+            print(bcolors.SYSTEM + f"  Sys: Exception: Could not request results; {e}" + bcolors.ENDC)</code></pre>
+        
+            <p>Plusieurs optimisations ont été implémentées pour réduire la latence et améliorer la fluidité des interactions, comme le traitement parallèle des réponses de GPT-4 :</p>
+        
+            <pre><code># Séparation des phrases de la réponse
+        split_answers = re.findall(r'[^.!?]*[.!?]', answer)
+        
+        # Traitement parallèle des phrases
+        for answer_part in split_answers:
+            response = client.audio.speech.create(
+                model="tts-1",
+                voice="echo", 
+                response_format="mp3",
+                input=answer_part
+            )
+            filename = os.path.join(experiment_folder, str(len(prompts)).zfill(4) + "-Elis (" + str(answer_part_index).zfill(2) + ").mp3")
+            response.stream_to_file(filename)
+            
+            # Attente de la fin de la lecture de la phrase précédente
+            await task_player
+            # Lecture de la nouvelle phrase
+            task_player = asyncio.create_task(asyncio.to_thread(playsound, filename))</code></pre>
+        
+            <h3>Un projet open-source</h3>
+            <p>Le code source complet du Toutou 3.0 est disponible sur GitHub, reflétant notre volonté de transparence et de collaboration :</p>
+            <ul>
+                <li>🔗 <a href="https://github.com/PatBQc/ProjetElis" target="_blank">Dépôt GitHub du projet ELIS</a></li>
+            </ul>
+            <p>Nous encourageons tous les développeurs intéressés à explorer notre code, à l'utiliser pour leurs propres projets et à contribuer à son amélioration. Ensemble, nous pouvons faire du Toutou 3.0 un compagnon toujours plus pertinent et enrichissant pour les enfants !</p>
         </section>
-
+        
         <section id="defis">
             <h2>Défis et solutions</h2>
-            <p>Lors du développement du Toutou 3.0, nous avons dû faire face à plusieurs défis, notamment :</p>
-            <ul>
-                <li>La reconnaissance de la parole des enfants, parfois imprécise ou hésitante</li>
-                <li>La génération de réponses adaptées au niveau de langage et de compréhension des enfants</li>
-                <li>L'intégration de tous les composants dans un format de peluche agréable et sécurisé</li>
-            </ul>
-            <p>Nous avons résolu ces défis en travaillant étroitement avec des experts en traitement du langage naturel, en psychologie de l'enfant et en design de produits. Nous avons également réalisé de nombreux tests utilisateurs pour affiner les réglages de notre système.</p>
+            <p>Le développement du Toutou 3.0 a été une véritable quête initiatique pour Attis et Vincent, jalonnée de défis techniques et humains. Mais c'est en affrontant ces épreuves avec créativité et détermination qu'ils ont su transformer les obstacles en opportunités d'apprentissage et d'amélioration.</p>
+        
+            <h3>Reconnaissance de la parole des enfants</h3>
+            <p>L'un des premiers défis rencontrés fut la reconnaissance de la parole des enfants, souvent imprécise ou hésitante. Pour y remédier, Attis et Vincent ont travaillé sur l'optimisation des modèles de reconnaissance vocale, en les entraînant sur des échantillons de voix d'enfants et en ajustant les paramètres pour mieux gérer les variations de prononciation et les bruits de fond.</p>
+        
+            <h3>Génération de réponses adaptées</h3>
+            <p>Autre défi de taille : générer des réponses adaptées au niveau de langage et de compréhension des enfants. Grâce à un travail minutieux sur les prompts et les paramètres de GPT-4, Attis et Vincent ont su créer un modèle de conversation capable de s'ajuster au vocabulaire et aux centres d'intérêt de chaque enfant, tout en maintenant une communication bienveillante et enrichissante.</p>
+        
+            <h3>Intégration des composants</h3>
+            <p>Intégrer tous les composants électroniques dans un format de peluche agréable et sécurisé n'a pas été une mince affaire. Mais en travaillant main dans la main avec leurs parents, Attis et Vincent ont su concevoir un boîtier sur mesure pour accueillir le Raspberry Pi et les autres éléments, tout en préservant la douceur et l'aspect réconfortant du Toutou 3.0.</p>
+        
+            <h3>Maintien de l'engagement et du lien affectif</h3>
+            <p>Pour que le Toutou 3.0 soit un véritable compagnon pour l'enfant, il fallait créer et maintenir un lien affectif fort. C'est en privilégiant des interactions naturelles et chaleureuses, basées sur l'écoute et l'empathie, qu'Attis et Vincent ont réussi à donner vie à un ami en peluche attachant et réconfortant. Chaque détail, du ton de la voix au choix des mots, a été pensé pour favoriser l'engagement de l'enfant sur le long terme.</p>
+        
+            <h3>Respect de l'éthique et des règles du concours</h3>
+            <p>Tout au long du projet, Attis et Vincent ont veillé à respecter les règles d'éthique et les consignes du Défi Expo-Sciences. Ainsi, aucun test n'a été réalisé avec des enfants durant la phase de développement, conformément aux exigences du concours. Les seuls utilisateurs du Toutou 3.0 ont été Attis et Vincent eux-mêmes, qui ont su se mettre dans la peau de leur public cible pour améliorer leur prototype.</p>
+        
+            <h3>Gestion du temps et des ressources</h3>
+            <p>Mener un tel projet en parallèle de leur scolarité n'a pas été facile pour Attis et Vincent. Mais en s'organisant rigoureusement et en sollicitant l'aide de leurs proches, ils ont su trouver le temps et les ressources nécessaires pour concrétiser leur vision. Chaque obstacle rencontré a été l'occasion de développer leur sens de l'initiative et leur capacité à rebondir.</p>
+        
+            <h3>Perspectives d'avenir</h3>
+            <p>Si le Toutou 3.0 en est encore au stade de prototype, Attis et Vincent ont déjà en tête de nombreuses pistes d'amélioration et d'évolution. Passage à l'échelle, commercialisation, développement de nouvelles fonctionnalités... Les défis ne manquent pas pour la suite de l'aventure, mais c'est avec enthousiasme et détermination qu'ils les abordent, forts de tout ce qu'ils ont appris et accompli jusqu'ici. Et s'ils savent pouvoir compter sur le soutien de leur entourage, ils sont aussi ouverts à toute aide extérieure pour faire grandir leur projet et en démultiplier l'impact.</p>
         </section>
-
+        
         <section id="evolution">
             <h2>Évolution du projet</h2>
-            <p>Le Toutou 3.0 est en constante évolution pour s'adapter aux besoins et aux retours des utilisateurs. Parmi les pistes d'amélioration envisagées, on peut citer :</p>
+            <p>Le Toutou 3.0 n'est que le début d'une belle aventure. Attis et Vincent ont encore plein d'idées et d'aspirations pour faire grandir leur projet et en démultiplier l'impact. Parce qu'ils sont convaincus que la technologie peut être un formidable outil au service du bien-être et de l'épanouissement des enfants, ils voient grand pour l'avenir du Toutou 3.0.</p>
+        
+            <h3>Pistes d'amélioration</h3>
+            <p>À court terme, plusieurs pistes d'amélioration sont envisagées pour enrichir l'expérience du Toutou 3.0 et en faire un compagnon toujours plus attachant et interactif :</p>
             <ul>
-                <li>L'ajout d'une caméra pour permettre une interaction visuelle et la reconnaissance des émotions</li>
-                <li>Le développement d'une application mobile compagnon pour suivre les progrès de l'enfant</li>
-                <li>L'intégration de nouveaux scénarios d'interaction (jeux éducatifs, histoires interactives, etc.)</li>
+                <li>🎥 Ajout d'une caméra pour permettre une interaction visuelle et la reconnaissance des émotions</li>
+                <li>📱 Développement d'une application mobile compagnon pour suivre les progrès de l'enfant</li>
+                <li>🎲 Intégration de nouveaux scénarios d'interaction (jeux éducatifs, histoires interactives, etc.)</li>
+                <li>📏 Déploiement sur des composants plus adaptés (Raspberry Pi Nano ou Zero, meilleurs haut-parleurs et micros, etc.)</li>
+                <li>🔋 Utilisation d'une batterie rechargeable par induction avec un tapis de charge intégré</li>
+                <li>👀 Ajout d'écrans OLED flexibles pour donner une rétroaction visuelle (images, vidéos générées par l'IA)</li>
+                <li>🎨 Intégration d'écrans dans les yeux pour permettre un suivi du regard et un feedback lors des temps de réflexion</li>
+                <li>🎙️ Amélioration de l'interaction vocale (activation/désactivation par pression, gestion des tours de parole, etc.)</li>
             </ul>
-            <p>Nous sommes ouverts à toutes les suggestions et idées pour faire du Toutou 3.0 un compagnon toujours plus enrichissant et stimulant pour les enfants.</p>
+        
+            <h3>Perspectives à long terme</h3>
+            <p>À plus long terme, Attis et Vincent imaginent de nombreuses évolutions possibles pour le Toutou 3.0 :</p>
+            <ul>
+                <li>🏭 Passage à l'échelle et commercialisation pour rendre le Toutou 3.0 accessible au plus grand nombre</li>
+                <li>🤝 Partenariats avec des acteurs de l'éducation et de la santé pour développer des usages spécifiques (enfants hospitalisés, enfants en situation de handicap, etc.)</li>
+                <li>🌍 Déclinaisons du Toutou 3.0 adaptées à différentes cultures et langues pour un impact international</li>
+                <li>🧩 Création d'un écosystème d'applications et de contenus autour du Toutou 3.0 pour un accompagnement sur mesure de chaque enfant</li>
+            </ul>
+            <p>Autant de pistes qui dessinent un avenir passionnant pour le Toutou 3.0, au service de l'enfance et de l'éducation.</p>
+        
+            <h3>Un projet ouvert et collaboratif</h3>
+            <p>Mais pour concrétiser cette vision, Attis et Vincent savent qu'ils auront besoin de soutiens et de compétences complémentaires. C'est pourquoi ils ont choisi de faire du Toutou 3.0 un projet open-source, ouvert à la contribution de tous ceux qui partagent leurs valeurs et leur ambition.</p>
+            <p>Que vous soyez développeur, designer, éducateur, thérapeute ou simplement parent, vous pouvez participer à l'aventure du Toutou 3.0 :</p>
+            <ul>
+                <li>💻 En contribuant au code source sur GitHub</li>
+                <li>🎨 En proposant des améliorations de design ou de nouveaux contenus</li>
+                <li>🧪 En testant le Toutou 3.0 avec vos enfants et en partageant vos retours d'expérience</li>
+                <li>📣 En parlant du projet autour de vous et en le faisant connaître</li>
+            </ul>
+            <p>Chaque contribution, chaque idée, chaque encouragement compte pour aider le Toutou 3.0 à grandir et à s'améliorer. Ensemble, nous pouvons en faire un véritable compagnon du quotidien pour tous les enfants, quels que soient leur origine, leur situation ou leurs difficultés.</p>
+        
+            <h3>Et vous, que pensez-vous du Toutou 3.0 ?</h3>
+            <p>Nous avons hâte de connaître votre avis sur notre projet et sur ses perspectives d'évolution. N'hésitez pas à nous faire part de vos réactions, de vos suggestions, de vos encouragements ou de vos questions. C'est grâce à votre feedback que nous pourrons faire du Toutou 3.0 un projet toujours plus pertinent et impactant.</p>
+            <p>Alors, prêts à écrire avec nous les prochaines pages de l'histoire du Toutou 3.0 ? L'aventure ne fait que commencer, et elle promet d'être passionnante !</p>
         </section>
     </main>
 
