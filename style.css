@@ -289,6 +289,47 @@ h3 {
     text-decoration: underline;
 }
 
+.membre {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
+
+.membre img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.membre h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.membre p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.photo-equipe {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.photo-equipe img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.photo-equipe .legende {
+    font-style: italic;
+    color: #666;
+}
+
 /* Styles pour les appareils mobiles */
 @media screen and (max-width: 768px) {
     .header-top {
