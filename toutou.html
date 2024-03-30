@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Toutou 3.0 - Projet ELIS</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -245,8 +246,7 @@
             <h3>Gestion des erreurs et optimisations</h3>
             <p>Une attention particulière a été portée à la gestion des erreurs et des exceptions, afin de garantir un fonctionnement robuste et une expérience utilisateur optimale. Par exemple, le code vérifie systématiquement la validité des réponses reçues des API externes et fournit des messages d'erreur clairs en cas de problème :</p>
         
-            <pre class="code-example"><code>
-try:
+            <pre class="code-example"><code class="language-python">try:
     text = text + " " + recognizer.recognize_google(audio, language="fr-FR")
     print(bcolors.SYSTEM +  f"  Sys: Texte reconnu: {text}" + bcolors.ENDC)
 except sr.UnknownValueError:
@@ -256,8 +256,7 @@ except sr.RequestError as e:
         
             <p>Plusieurs optimisations ont été implémentées pour réduire la latence et améliorer la fluidité des interactions, comme le traitement parallèle des réponses de GPT-4 :</p>
         
-            <pre class="code-example"><code>
-# Séparation des phrases de la réponse
+            <pre class="code-example"><code class="language-python"># Séparation des phrases de la réponse
 split_answers = re.findall(r'[^.!?]*[.!?]', answer)
 
 # Traitement parallèle des phrases
@@ -364,5 +363,10 @@ for answer_part in split_answers:
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      </script>
 </body>
 </html>
